@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#E6977F</color>
+    <color name="purple_500">#DF714F</color>
+    <color name="purple_700">#CA4015</color>
+    <color name="teal_200">#876C64</color>
+    <color name="teal_700">#493129</color>
+    <color name="black">#0C0C0C</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- colores que sume yo -->
+
+
+    <color name="colorPrimary">#D6562E</color>
+    <color name="colorPrimaryDark">#36302E</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="screenBackground">#B6B1AF</color>
+    <color name="buttonBackground">#802B11</color>
+</resources>

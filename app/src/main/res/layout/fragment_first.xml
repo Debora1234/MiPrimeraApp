@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenBackground"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/textviewFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/screenBackground"
+        android:text="@string/textviewFirstText"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHighlight="#FF5722"
+        android:textColorHint="#531C0B"
+        android:textColorLink="#FF5722"
+        android:textSize="72sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@id/toastButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/toastButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonBackground"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/toastButtonText"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textviewFirst" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@color/buttonBackground"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/nextButtonText"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toastButton"
+        app:layout_constraintTop_toBottomOf="@+id/textviewFirst" />
+
+    <Button
+        android:id="@+id/randomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@color/buttonBackground"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/randomButtonText"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/toastButton"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewFirst"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <Button
+        android:id="@+id/countButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonBackground"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/countButtonText"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toastButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
