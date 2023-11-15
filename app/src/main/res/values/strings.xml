@@ -15,17 +15,30 @@
     /*creadas primer pantalla*/
     <string name="textviewFirstText">0</string>
     <string name="helloSecondFragment">Hello second fragment. Arg: %1$s</string>
-    <string name="toastButtonText">Toast</string>
-    <string name="randomButtonText">Random</string>
-    <string name="nextButtonText">Next</string>
-    <string name="countButtonText">Count</string>
+    <string name="toastButtonText">Saludo</string>
+    <string name="randomButtonText">Lanzar los dados</string>
+    <string name="countButtonText">Cantidad de dados</string>
 
 
     /*creadas segunda pantalla*/
-    <string name="textviewHeaderText">Número aleatorio de 0 a %d</string>
+    <string name="textviewHeaderText">Vamos a lanzar %d dados</string>
     <string name="buttonSecondText">Volver</string>
     <string name="textViewRandomText">R</string>
+    <string name="textviewTexto">Lanzador virutal de dados</string>
 
+    <string name="textViewRandomText1">r1</string>
+    <string name="textViewRandomText2">r2</string>
+    <string name="textViewRandomText3">r3</string>
+    <string name="textViewRandomText4">r4</string>
+    <string name="textViewRandomText5">r5</string>
+    <string name="textViewRandomText6">r6</string>
+
+    <string name="textViewTextoTexto1">Dado 1: </string>
+    <string name="textViewTextoTexto2">Dado 2: </string>
+    <string name="textViewTextoTexto3">Dado 3: </string>
+    <string name="textViewTextoTexto4">Dado 4: </string>
+    <string name="textViewTextoTexto5">Dado 5: </string>
+    <string name="textViewTextoTexto6">Dado 6: </string>
 
 
 </resources>

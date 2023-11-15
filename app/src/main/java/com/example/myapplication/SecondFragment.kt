@@ -51,16 +51,40 @@ class SecondFragment : Fragment() {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
 
+        /* codigo para la funcion random */
+
         val count = args.myArg
+        repeat(count) {
+            updateUI(count)
+        }
+
+    }
+
+    private fun updateUI(count: Int) {
+
         val countText = getString(R.string.textviewHeaderText, count)
-        view.findViewById<TextView>(R.id.textviewHeader).text = countText
+        view?.findViewById<TextView>(R.id.textviewHeader)?.text = countText
 
         val random = java.util.Random()
-        var randomNumber = 0
-        if (count > 0) {
-            randomNumber = random.nextInt(count + 1)
+
+        // Hago una lista, con los textview.
+        val textViewList = listOf(
+            view?.findViewById<TextView>(R.id.textViewRandom1),
+            view?.findViewById<TextView>(R.id.textViewRandom2),
+            view?.findViewById<TextView>(R.id.textViewRandom3),
+            view?.findViewById<TextView>(R.id.textViewRandom4),
+            view?.findViewById<TextView>(R.id.textViewRandom5),
+            view?.findViewById<TextView>(R.id.textViewRandom6)
+        )
+
+        // repetimos el proceso count veces
+        for (i in 0 until count) {
+            // Genera un número aleatorio en el rango [1, 6] para simular un lanzamiento de dado.
+            val randomNumber = random.nextInt(6) + 1
+
+            // Asigna el resultado a cada TextView correspondiente.
+            textViewList.getOrNull(i)?.text = randomNumber.toString()
         }
-        view.findViewById<TextView>(R.id.textViewRandom).text = randomNumber.toString()
     }
 
     override fun onDestroyView() {

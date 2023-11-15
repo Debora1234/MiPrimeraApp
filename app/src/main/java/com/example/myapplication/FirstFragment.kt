@@ -31,7 +31,9 @@ class FirstFragment : Fragment() {
         /*obtenemos el valor del text*/
         val countSring = showCountTextView.text.toString()
         var count = countSring.toInt()
-        count++
+        if (count < 6)
+            {count++ }
+        else  {count = 1 }
         /*mostramos el nuevo valor en el text*/
         showCountTextView.text=count.toString()
     }
@@ -49,10 +51,7 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //método para el boton de next, ir de la primer pantalla a la segunda
-        binding.nextButton.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-        }
+
 
         //método para escuchar cuando se pulsa el boton toast, e imprimir un cartel
         view.findViewById<Button>(R.id.toastButton).setOnClickListener {
